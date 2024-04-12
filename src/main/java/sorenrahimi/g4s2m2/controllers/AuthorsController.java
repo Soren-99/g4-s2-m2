@@ -54,7 +54,7 @@ public class AuthorsController {
     }
 
     // 5. DELETE http://localhost:3001/blogPosts/{userId}
-    @DeleteMapping("/{userId}")
+    @DeleteMapping("/{authorId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     private void findByIdAndDelete(@PathVariable int authorId){
         authorsService.findByIdAndDelete(authorId);
